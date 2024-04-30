@@ -4,14 +4,17 @@ fullnameOverride: "activitysakhi"
 replicaCount: 1
 
 image:
-  repository: dubea/sakhi-api-service-main-sakhi-api
-  tag: "main"
+  repository: 19981719/sakhi-api
+  tag: "latest"
   pullPolicy: Always
   pullSecrets: []
 
 log_level: INFO
 telemetry_url: "http://telemetry-service:9001"
 telemetry_log_enabled: "false"
+redis_host: "redis-master"
+redis_port: 6379
+redis_db: 0
 
 global:
   openai_api_base: ""
